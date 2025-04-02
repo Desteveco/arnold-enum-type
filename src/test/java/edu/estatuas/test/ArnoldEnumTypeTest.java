@@ -13,7 +13,7 @@ public class ArnoldEnumTypeTest {
 
 	@BeforeClass
 	public static void CreacionArrayPlanetasSetup() {
-		planetas = new String[8];
+		planetas = new String[9];
 		int planetasIncluidos = 0;
 		for (Planeta planeta : Planeta.values()) {
 			planetas[planeta.ordinal()] = planeta.name();
@@ -85,16 +85,16 @@ public class ArnoldEnumTypeTest {
 	@Test
 	public void ArrayGigantesGaseosos() {
 
-		String[] gigantesGaseosos = new String[4];
+		String[] gigantesGaseosos = new String[5];
 		int planetasIncluidos = 0;
 
 		byte index = 0;
-		for (int i = Planeta.JUPITER.ordinal(); i <= Planeta.NEPTUNE.ordinal(); i++) {
+		for (int i = Planeta.JUPITER.ordinal(); i <= Planeta.PLUTO.ordinal(); i++) {
 			gigantesGaseosos[index] = Planeta.values()[i].name();
 			planetasIncluidos += 1;
 			index += 1;
 		}
-		assertThat(planetasIncluidos).isEqualTo(4);
+		assertThat(planetasIncluidos).isEqualTo(5);
 		assertThat(planetas).doesNotContainNull();
 
 		for (Planeta planeta : Planeta.getGigantesGaseosos()) {

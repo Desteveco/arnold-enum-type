@@ -2,9 +2,6 @@ package edu.estatuas;
 
 import edu.estatuas.logica.Planeta;
 
-/**
- * Hello world!
- */
 public class ArnoldMain{
 
     public static void main(String[] args) {

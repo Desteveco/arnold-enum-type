@@ -11,7 +11,8 @@ public enum Planeta {
     JUPITER(1.9e+27, 7.1492e+7),
     SATURN(5.688e+26, 6.0268e+7),
     URANUS(8.686e+25, 2.5559e+7),
-    NEPTUNE(1.024e+26, 2.4746e+7);
+    NEPTUNE(1.024e+26, 2.4746e+7),
+    PLUTO( 1.3e+22, 1.1883e+6);
 
     public static final double G = 6.67400E-11;
 
